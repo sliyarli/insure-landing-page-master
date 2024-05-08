@@ -1,0 +1,36 @@
+/* FONTS */
+/* font-family: "DM Serif Display", serif; */
+/* font-family: "Karla", sans-serif; */
+
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  resize: none;
+}
+
+:root {
+  /* Primary Colors */
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+
+  /* Neutral Colors */
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  /* FONTS */
+  --dmSerif: "DM Serif Display", serif;
+  --karla: "Karla", sans-serif;
+}
+
+/* 
+body {
+  min-height: 100vh;
+} */
+
+.row {
+  margin: auto 0 !important;
+}
