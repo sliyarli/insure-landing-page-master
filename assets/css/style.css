@@ -11,6 +11,10 @@
   resize: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Primary Colors */
   --dark-violet: hsl(256, 26%, 20%);
@@ -128,8 +132,11 @@ nav {
 /* HEADER */
 
 header {
-  background: var(--dark-violet);
+  background: url(/images/bg-pattern-intro-right-desktop.svg) no-repeat right
+    top;
+  background-color: var(--dark-violet);
   color: var(--very-light-gray);
+  position: relative;
 }
 
 .header-heading {
@@ -141,17 +148,65 @@ header {
   font-family: var(--karla);
 }
 
-#line {
-  width: 30%;
+.line {
+  width: 165px;
   opacity: 1;
   border: none;
+
+  height: 0.06rem !important;
+}
+
+.light-line {
   color: var(--very-light-gray); /* old IE */
   background-color: var(--very-light-gray); /* Modern Browsers */
-  height: 0.06rem !important;
+}
+
+.dark-line {
+  color: var(--dark-violet); /* old IE */
+  background-color: var(--dark-violet); /* Modern Browsers */
 }
 
 .header-image {
   transform: translateY(150px);
+  position: relative;
+  z-index: 2;
+}
+
+#header-overlay {
+  background: url(/images/bg-pattern-intro-left-desktop.svg) no-repeat;
+  height: 100vh;
+  position: absolute;
+  top: 550px;
+  background-size: 120px;
+  width: 120px;
+}
+
+/* ABOUT-US SECTION */
+.about-us {
+  padding: 300px 0 150px 0;
+}
+.about-heading {
+  font-family: var(--dmSerif);
+  font-size: 4.5rem;
+  color: var(--very-dark-violet);
+  padding: 20px 0 50px 0;
+}
+.about-cards {
+}
+.justify-content-between {
+}
+.about-card {
+}
+.about-icon {
+  width: 100px;
+}
+.card-heading {
+  font-family: var(--dmSerif);
+  padding: 30px 0 10px 0;
+}
+.card-paragraph {
+  font-family: var(--karla);
+  color: var(--dark-grayish-violet);
 }
 
 /* CSS Media Queries for Responsive Design */
@@ -178,6 +233,12 @@ header {
   .header-image {
     width: 100%;
     transform: none;
+  }
+
+  /* ABOUT-US SECTION */
+
+  .about-card {
+    text-align: center;
   }
 }
 
