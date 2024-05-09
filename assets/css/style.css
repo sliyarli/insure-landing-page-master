@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  transition: 0.3s;
+}
+
 :root {
   /* Primary Colors */
   --dark-violet: hsl(256, 26%, 20%);
@@ -68,7 +72,6 @@ nav {
   color: var(--dark-grayish-violet) !important;
   font-size: 0.9rem;
   letter-spacing: 1px;
-  transition: 0.3s;
 }
 
 .nav-links#desktop-links .nav-link-item:hover {
@@ -192,12 +195,6 @@ header {
   color: var(--very-dark-violet);
   padding: 20px 0 50px 0;
 }
-.about-cards {
-}
-.justify-content-between {
-}
-.about-card {
-}
 .about-icon {
   width: 100px;
 }
@@ -215,7 +212,7 @@ header {
 /* HOW WE WORK SECTION */
 
 .how-we-work {
-  padding: 50px 0;
+  padding: 50px 0 250px 0;
 }
 
 .how-we-work .row {
@@ -228,6 +225,42 @@ header {
   color: var(--very-light-gray);
   font-family: var(--dmSerif);
   font-size: 3.7rem;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--very-light-gray)
+    url("/images/bg-pattern-footer-desktop.svg") no-repeat left top;
+  padding: 60px 0;
+}
+
+.socials a:hover {
+  filter: invert(12%) sepia(10%) saturate(100%) hue-rotate(215deg)
+    brightness(0%) contrast(91%);
+}
+
+footer .line {
+  width: 100%;
+}
+
+.lower-footer * {
+  font-family: var(--karla);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.lower-footer-heading {
+  color: var(--dark-grayish-violet);
+}
+
+.lower-footer-link {
+  color: var(--dark-violet);
+}
+
+.lower-footer-link:hover {
+  color: var(--grayish-blue);
 }
 
 /* CSS Media Queries for Responsive Design */
@@ -280,6 +313,12 @@ header {
 
   #how-we-work-heading {
     text-align: center;
+  }
+
+  /* FOOTER */
+
+  .lower-footer {
+    gap: 50px;
   }
 }
 
