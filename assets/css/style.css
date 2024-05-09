@@ -205,8 +205,28 @@ header {
   padding: 30px 0 10px 0;
 }
 .card-paragraph {
+  width: 99%;
+
   font-family: var(--karla);
   color: var(--dark-grayish-violet);
+}
+
+/* HOW WE WORK SECTION */
+
+.how-we-work {
+  padding: 50px 0;
+}
+
+.how-we-work .row {
+  background: var(--dark-violet)
+    url("/images/bg-pattern-how-we-work-desktop.svg") no-repeat right top;
+  padding: 50px 0;
+}
+
+#how-we-work-heading {
+  color: var(--very-light-gray);
+  font-family: var(--dmSerif);
+  font-size: 3.7rem;
 }
 
 /* CSS Media Queries for Responsive Design */
@@ -237,8 +257,38 @@ header {
 
   /* ABOUT-US SECTION */
 
+  .about-us {
+    padding: 100px 0 150px 0;
+  }
+
+  .about-heading {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
   .about-card {
     text-align: center;
+  }
+
+  /* HOW WE WORK SECTION */
+
+  .how-we-work .row {
+    background: var(--dark-violet)
+      url("/images/bg-pattern-how-we-work-mobile.svg") no-repeat right top;
+  }
+
+  #how-we-work-heading {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1046px !important;
   }
 }
 
